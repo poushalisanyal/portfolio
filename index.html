@@ -161,29 +161,48 @@
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">Personality Trait Prediction</h3>
                 <p class="text-gray-300">
-                    Built a binary classification system using SVM and MLP with extensive preprocessing,
-                    K-Fold cross-validation, and FastAPI deployment for real-time predictions.
+                Developed a supervised machine learning pipeline to predict personality traits (Introvert/Extrovert) from behavioral and survey-based data.
+                Performed extensive data preprocessing including missing value imputation, categorical encoding, feature scaling, and outlier handling to ensure model robustness.
+                Conducted exploratory data analysis (EDA) to identify key behavioral indicators influencing personality classification.
+                Implemented and compared multiple classifiers including Support Vector Machines (SVM) and Multilayer Perceptron (MLP), using K-Fold cross-validation to prevent overfitting and ensure generalization.
+                Achieved a 92% F1-score and 93% recall, indicating strong performance on imbalanced class distributions.
+                Deployed the final model using FastAPI, enabling real-time predictions through RESTful APIs and improving accessibility for downstream applications.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">Apparel Brand Image Classifier</h3>
                 <p class="text-gray-300">
-                    Developed a CNN-based image classifier using VGG16 transfer learning and training optimization techniques.
+                    Designed and implemented a deep learning-based image classification system to identify apparel brands such as Nike, Adidas, and Converse from product images.
+                    Utilized Convolutional Neural Networks (CNNs) with VGG16 transfer learning, leveraging pretrained ImageNet weights to extract high-level visual features.
+                    Fine-tuned upper convolutional layers to adapt the model to domain-specific patterns while reducing training time and computational cost.
+                    Applied data augmentation techniques to improve model generalization across varied lighting and image orientations.
+                    Used training callbacks such as EarlyStopping and ModelCheckpoint to prevent overfitting and stabilize convergence.
+                    Evaluated performance using validation accuracy and loss curves across multiple epochs.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">PDF-Based Semantic Search Engine</h3>
                 <p class="text-gray-300">
-                    Implemented a semantic search engine using HuggingFace embeddings and FAISS for efficient retrieval.
+                    Built a semantic search system to retrieve contextually relevant information from PDF documents such as academic notes and technical material.
+                    Extracted and chunked text from PDFs while preserving semantic coherence across sections.
+                    Generated dense vector embeddings using HuggingFace sentence transformers and indexed them using FAISS for efficient similarity search.
+                    Enabled semantic retrieval based on contextual similarity rather than keyword matching, improving relevance and search quality.
+                    Designed the system to be scalable and fast, achieving low-latency retrieval without relying on large language models.
+                    Demonstrated practical understanding of vector databases and semantic information retrieval pipelines.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">NLP – Sentiment Analysis</h3>
                 <p class="text-gray-300">
-                    Built sentiment analysis pipelines using BERT and traditional NLP techniques.
+                    Developed an end-to-end Natural Language Processing pipeline for sentiment analysis under academic supervision.
+                    Performed comprehensive text preprocessing including tokenization, lemmatization, stop-word removal, and normalization.
+                    Implemented transformer-based models such as BERT to generate contextual embeddings capturing semantic meaning beyond surface-level text.
+                    Compared transformer-based approaches with lexicon-based methods like VADER to evaluate accuracy, interpretability, and performance trade-offs.
+                    Applied sentiment classification and aspect-based opinion extraction to analyze user opinions and emotional polarity in text datasets.
+                    Strengthened understanding of NLP model evaluation and real-world text variability.
                 </p>
             </div>
         </div>
@@ -227,3 +246,4 @@
 
 </body>
 </html>
+
