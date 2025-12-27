@@ -9,269 +9,160 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
     </style>
 </head>
-<body class="bg-black text-white"> <!-- Set body background to pure black and default text to white -->
 
-<header class="bg-black shadow-sm py-4 px-6 md:px-12 fixed w-full z-10"> <!-- Header background to pure black -->
+<body class="bg-black text-white">
+
+<!-- HEADER -->
+<header class="bg-black shadow-sm py-4 px-6 md:px-12 fixed w-full z-10">
     <nav class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-white text-2xl font-bold rounded-md p-2 hover:bg-gray-800 transition duration-300">Poushali Sanyal</a>
+        <a href="#" class="text-white text-2xl font-bold">Poushali Sanyal</a>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="#home" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">Home</a></li>
-            <li><a href="#about" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">About</a></li>
-            <li><a href="#skills" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">Skills</a></li>
-            <li><a href="#portfolio" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">Projects</a></li>
-            <li><a href="#certifications" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">Certifications</a></li>
-            <li><a href="#contact" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-800">Contact</a></li>
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About</a></li>
+            <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+            <li><a href="#portfolio" class="hover:text-blue-400">Projects</a></li>
+            <li><a href="#certifications" class="hover:text-blue-400">Certifications</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
-        <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </button>
     </nav>
-
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-8"> <!-- Mobile menu background to pure black -->
-        <button id="close-mobile-menu" class="absolute top-6 right-6 text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
-        <ul class="flex flex-col space-y-6 text-xl">
-            <li><a href="#home" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a></li>
-            <li><a href="#about" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a></li>
-            <li><a href="#skills" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a></li>
-            <li><a href="#portfolio" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a></li>
-            <li><a href="#certifications" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Certifications</a></li>
-            <li><a href="#contact" class="text-white hover:text-blue-400 font-medium transition duration-300 rounded-md p-3 hover:bg-gray-800 block" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a></li>
-        </ul>
-    </div>
 </header>
-<section id="home" class="relative bg-gradient-to-r from-blue-600 to-black text-white h-screen flex items-center justify-center text-center overflow-hidden">
-    <div class="relative z-10 p-6 max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hello, I'm Poushali Sanyal</h1>
-        <!-- Expanded content for the home page -->
+
+<!-- HOME (UNCHANGED) -->
+<section id="home" class="relative bg-gradient-to-r from-blue-600 to-black text-white h-screen flex items-center justify-center text-center">
+    <div class="p-6 max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hello, I'm Poushali Sanyal</h1>
         <p class="text-xl md:text-2xl mb-8 opacity-90">
            My learning began with numbers — structured, logical, certain. But it’s in data, with all its imperfections and hidden stories, that I found real curiosity. Over the last 2+ years, I’ve immersed myself in building machine learning and deep learning projects — not as assignments, but as explorations of how machines learn, how patterns emerge, and how real-world problems can be reframed through algorithms. From behavioral classification to image recognition, each project has shaped not just my skills but the way I think. I now seek a data science internship where I can contribute with depth, continue to question what I build, and grow in an environment that values both thinking and doing.
         </p>
-        <a href="#portfolio" class="bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 rounded-full text-lg font-semibold shadow-lg transition duration-300 ease-in-out transform hover:scale-105">View My Work</a>
+        <a href="#portfolio" class="bg-white text-blue-600 py-3 px-8 rounded-full font-semibold hover:scale-105 transition">
+            View My Work
+        </a>
     </div>
 </section>
 
-<!-- ABOUT SECTION: -->
-<section id="about" class="py-16 bg-black"> <!-- Background to pure black -->
-    <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-center gap-12">
+<!-- ABOUT (UNCHANGED) -->
+<section id="about" class="py-16 bg-black">
+    <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
         <div class="w-full md:w-1/3 flex justify-center">
-            <img src="images/WhatsApp Image 2025-06-30 at 09.57.32.jpeg" class="rounded-full w-64 h-64 object-cover shadow-xl border-4 border-white">
+            <img src="images/WhatsApp Image 2025-06-30 at 09.57.32.jpeg"
+                 class="rounded-full w-64 h-64 object-cover border-4 border-white">
         </div>
-        <div class="w-full md:w-2/3 text-center md:text-left">
-            <h2 class="text-4xl font-bold text-white mb-6">About Me</h2>
-            <p class="text-lg text-white leading-relaxed mb-4">
+        <div class="w-full md:w-2/3">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-lg leading-relaxed mb-4">
                I didn’t enter this field with a plan — I entered it with questions.
 
-Studying Mathematics at Ramanujan College, DU, and now pursuing my M.Sc. in Mathematics with Computer Science from Jamia Millia Islamia, I’ve learned to respect the structure of theory — but I’ve also learned to challenge it. While others stopped at solving equations, I started turning data into stories, models into tools, and curiosity into code.
-
-For the past 2+ years, I’ve been building machine learning and deep learning projects — not because someone asked me to, but because I couldn’t not do it. From personality prediction models to deep learning image classifiers, every project taught me something books couldn’t: how messy real-world data is, how algorithms fail before they work, and how insight often lives where you least expect it.
-
-I’m not here to just “do data science.” I’m here to learn like it matters, build like it solves something, and grow with people who care about both the why and the how.
-
-If you're working on something honest, hard, or a little bit chaotic — I’d like to be involved.
+               Studying Mathematics at Ramanujan College, DU, and now pursuing my M.Sc. in Mathematics with Computer Science from Jamia Millia Islamia, I’ve learned to respect the structure of theory — but I’ve also learned to challenge it.
             </p>
-            <p class="text-lg text-white leading-relaxed">
-                I have experience with Python, Java, C, SQL, HTML, and a wide array of libraries and tools including Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost, TensorFlow, and Keras. My projects demonstrate a strong ability in data preprocessing, feature engineering, and delivering high-fidelity predictive models.
+            <p class="text-lg leading-relaxed">
+               For the past 2+ years, I’ve been building machine learning and deep learning projects — learning how real-world data behaves, how algorithms fail before they work, and how insight comes from iteration.
             </p>
         </div>
     </div>
 </section>
 
-<!-- SKILLS SECTION: -->
-<section id="skills" class="py-16 bg-black"> <!-- Background to pure black -->
-    <div class="container mx-auto px-6 md:px-12 text-center">
-        <h2 class="text-4xl font-bold text-white mb-12">My Skills & Expertise</h2>
-        <div class="max-w-3xl mx-auto text-left space-y-6">
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Programming Languages:</h3>
-                <p class="text-lg text-gray-300">Python, Java, C, SQL, HTML</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Core CS Concepts:</h3>
-                <p class="text-lg text-gray-300">Object-Oriented Programming (OOP), Data Structures, Algorithms</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Machine Learning:</h3>
-                <ul class="list-disc list-inside text-lg text-gray-300 space-y-1">
-                    <li>Supervised Learning, Unsupervised Learning, Regression, Model Selection & Evaluation, Cross-Validation, Hyperparameter Tuning.</li>
-                    <li>Algorithms: Logistic Regression, Decision Trees, Random Forest, K-Nearest Neighbors (KNN), Support Vector Machines (SVM), PCA, KNN, AdaBoost, Gradient Boosting (XGBoost).</li>
-                    <li>Deep Learning (Foundational): Multilayer Perceptrons (MLP), Neural Network Architectures (basic).</li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Data Preprocessing:</h3>
-                <p class="text-lg text-gray-300">Missing Value Imputation, Feature Engineering, Categorical Encoding (Label, One-Hot), Feature Scaling, Text Feature Extraction.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Exploratory Data Analysis (EDA):</h3>
-                <p class="text-lg text-gray-300">Statistical Analysis, Data Visualization (Matplotlib, Seaborn), Correlation Analysis.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Tools & Platforms & Libraries:</h3>
-                <p class="text-lg text-gray-300">MATLAB, LaTeX, MS Office (Word, Excel, PowerPoint), Overleaf, Jupyter notebook, Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost, Tensorflow, Keras.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Semantic Search Tools:</h3>
-                <p class="text-lg text-gray-300">LangChain (RAG), FAISS, HuggingFace Embeddings, PyPDFLoader</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-white mb-2">Data Visualization:</h3>
-                <p class="text-lg text-gray-300">Matplotlib, Seaborn, PlotLy.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PORTFOLIO SECTION: -->
-<section id="portfolio" class="py-16 bg-black"> <!-- Background to pure black -->
+<!-- SKILLS (UPDATED) -->
+<section id="skills" class="py-16 bg-black">
     <div class="container mx-auto px-6 md:px-12">
-        <h2 class="text-4xl font-bold text-center text-white mb-12">My Recent Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            <!-- PROJECT CARD 1: Social Media Addiction Prediction Model -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"> <!-- Card background to dark gray for contrast with pure black sections -->
-                <img src="images/social_media.webp" alt="Social Media Addiction Prediction Model" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Social Media Addiction Prediction Model</h3>
-                    <p class="text-gray-300 mb-4">Developed a robust classification model predicting student social media addiction, leveraging advanced feature engineering and comprehensive EDA. Validated top-performing algorithms (Random Forest, KNN) to 92% cross-validation accuracy, revealing key behavioral drivers of addiction.</p>
-                    <a href="https://github.com/poushalisanyal/Social-Media" class="text-blue-400 hover:underline font-medium">Learn More &rarr;</a>
-                </div>
-            </div>
+        <h2 class="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
 
-            <!-- PROJECT CARD 2: Deep Learning Image Classifier for Apparel Brands -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"> <!-- Card background to dark gray -->
-                <img src="images/apparel_brands.webp" alt="Deep Learning Image Classifier for Apparel Brands" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Deep Learning Image Classifier for Apparel Brands</h3>
-                    <p class="text-gray-300 mb-4">Developed a CNN-based image classification model for Nike, Adidas, and Converse products. Implemented transfer learning VGG16 and utilized Keras callbacks for robust model training and performance optimization.</p>
-                    <a href="https://github.com/poushalisanyal/Image_Prediction" class="text-blue-400 hover:underline font-medium">Learn More &rarr;</a>
-                </div>
-            </div>
-
-             <!-- PROJECT CARD 2: PDF-Based Semantic Search Engine -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"> <!-- Card background to dark gray -->
-                <img src="images/image_552d84ab56.avif" alt="PDF-Based Semantic Search Engine" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-2">PDF-Based Semantic Search Engine</h3>
-                    <p class="text-gray-300 mb-4">Built a RAG-style semantic search engine that retrieves context-aware text chunks from custom PDFs (e.g., deep
-                         learning notes) using vector similarity — no LLM used. Applied text chunking, HuggingFace embeddings, and FAISS index to support fast, meaningful information retrieval.</p>
-                    <a href="https://github.com/poushalisanyal/-PDF-Based-Semantic-Search-Engine" class="text-blue-400 hover:underline font-medium">Learn More &rarr;</a>
-                </div>
-            </div>
-
-
-            <!-- PROJECT CARD 3: Netflix Content Classification Model -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"> <!-- Card background to dark gray -->
-                <img src="images/netflix.avif" alt="Netflix Content Classification Model" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Netflix Content Classification Model</h3>
-                    <p class="text-gray-300 mb-4">Architected a Netflix content classification system by extracting high-value features from unstructured text and metadata. Achieved top-tier classification accuracy across diverse ML models (XGBoost, Random Forest).</p>
-                    <a href="https://github.com/poushalisanyal/Netflix_Movies_and_TV_Shows" class="text-blue-400 hover:underline font-medium">Learn More &rarr;</a>
-                </div>
-            </div>
-
-            <!-- PROJECT CARD 4: Personality Trait Classification Model -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"> <!-- Card background to dark gray -->
-                <img src="images/personality.jpg" alt="Personality Trait Classification Model" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Personality Trait Classification Model</h3>
-                    <p class="text-gray-300 mb-4">Developed a high-fidelity classification model predicting personality traits (Extrovert/Introvert) from behavioral data. Delivered leading performance via SVM and MLP Classifier (92% F1 score and 93% Recall through K-Fold CV).Deployed the model using FastAPI to enable real-time personality prediction via REST API. 
-</p>
-                    <a href="https://github.com/poushalisanyal/Personality_model" class="text-blue-400 hover:underline font-medium">Learn More &rarr;</a>
-                </div>
-            </div>
+        <div class="max-w-4xl mx-auto space-y-5 text-gray-300 text-lg">
+            <p><strong>Programming:</strong> Python, Java, SQL, C, HTML, CSS</p>
+            <p><strong>Core CS:</strong> Object-Oriented Programming, Data Structures & Algorithms</p>
+            <p><strong>Data Science:</strong> Data Cleaning, Feature Engineering, Encoding, Scaling, EDA, Visualization</p>
+            <p><strong>Machine Learning:</strong> Regression, Classification, Cross-Validation, Hyperparameter Tuning</p>
+            <p><strong>Algorithms:</strong> Logistic Regression, Decision Trees, Random Forest, KNN, SVM, PCA, AdaBoost, XGBoost</p>
+            <p><strong>Deep Learning:</strong> MLP, CNN, Transfer Learning (VGG16)</p>
+            <p><strong>NLP:</strong> Text Preprocessing, Sentiment Analysis, BERT, spaCy, NLTK, VADER</p>
+            <p><strong>Deployment & Tools:</strong> FastAPI, FAISS, LangChain, Pandas, NumPy, TensorFlow, Keras</p>
         </div>
     </div>
 </section>
 
-<!-- CERTIFICATIONS SECTION: -->
-<section id="certifications" class="py-16 bg-black"> <!-- Background to pure black -->
-    <div class="container mx-auto px-6 md:px-12 text-center">
-        <h2 class="text-4xl font-bold text-white mb-12">Certifications & Achievements</h2>
-        <div class="max-w-3xl mx-auto text-left">
-            <ul class="list-disc list-inside text-xl text-gray-300 space-y-4">
-                <li><strong>IBM Skillsbuild Winter Certification Program:</strong> Data Analytics</li>
-                <li><strong>Introduction to Artificial Intelligence</strong> – IBM SkillsBuild<br>
-                <li><strong>Mastering the Art of Prompting</strong> – IBM SkillsBuild<br>
-                <li><strong>Large Language Model Basics</strong> – IBM SkillsBuild<br>
-                <li>LOR from Uttejana Foundation for teaching volunteer work</li>
-                <li>Athletics medals in school & college</li>
-            </ul>
+<!-- PROJECTS (UPDATED) -->
+<section id="portfolio" class="py-16 bg-black">
+    <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">Personality Trait Prediction</h3>
+                <p class="text-gray-300">
+                    Built a binary classification model using SVM and MLP.
+                    Performed feature engineering and K-Fold cross-validation.
+                    Achieved a 92% F1-score and deployed the model using FastAPI.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">Apparel Brand Image Classifier</h3>
+                <p class="text-gray-300">
+                    Developed a CNN-based image classifier using VGG16 transfer learning.
+                    Fine-tuned upper layers and applied callbacks to improve generalization.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">PDF-Based Semantic Search Engine</h3>
+                <p class="text-gray-300">
+                    Built a semantic search engine using dense embeddings and FAISS
+                    to retrieve context-aware information from PDF documents.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3">NLP – Sentiment Analysis</h3>
+                <p class="text-gray-300">
+                    Implemented NLP pipelines using BERT, spaCy, and NLTK
+                    for sentiment analysis and opinion mining.
+                </p>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- CONTACT SECTION: -->
-<section id="contact" class="py-16 bg-gradient-to-r from-blue-600 to-black text-white">
+<!-- CERTIFICATIONS (UPDATED) -->
+<section id="certifications" class="py-16 bg-black">
+    <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+        <h2 class="text-4xl font-bold mb-8 text-center">Certifications & Achievements</h2>
+        <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
+            <li>IBM SkillsBuild – Data Analytics</li>
+            <li>IBM SkillsBuild – Introduction to Artificial Intelligence</li>
+            <li>IBM SkillsBuild – Mastering the Art of Prompting</li>
+            <li>IBM SkillsBuild – Large Language Model Basics</li>
+            <li>Letter of Recommendation for teaching volunteer work</li>
+            <li>Athletics medals at school and college level</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT (UPDATED) -->
+<section id="contact" class="py-16 bg-gradient-to-r from-blue-600 to-black">
     <div class="container mx-auto px-6 md:px-12 text-center">
-        <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
-        <p class="text-lg mb-10 max-w-2xl mx-auto opacity-90">
-            Have a project in mind or just want to say hello? Feel free to reach out via email or connect with me on LinkedIn and GitHub.
+        <h2 class="text-4xl font-bold mb-6">Contact</h2>
+        <p class="text-lg mb-2">New Delhi, India</p>
+        <p class="text-lg mb-6">
+            Email:
+            <a href="mailto:sanyalpoushali19@gmail.com" class="text-blue-300 hover:underline">
+                sanyalpoushali19@gmail.com
+            </a>
         </p>
-        <div class="max-w-xl mx-auto bg-black p-8 rounded-xl shadow-lg text-white"> <!-- Inner box background to pure black -->
-            <p class="text-lg mb-4"><strong>Email:</strong> <a href="mailto:sanyalpoushali19@gmail.com" class="text-blue-400 hover:underline">sanyalpoushali19@gmail.com</a></p>
-            <div class="flex justify-center space-x-6">
-                <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/in/poushali-sanyal-1915a2314/" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.382 1.11-2.5 2.48-2.5s2.48 1.118 2.48 2.5zM.05 7.5h4.9V24H.05V7.5zm7.982 0h4.757v2.66h.069c.653-1.18 2.257-2.43 4.673-2.43 5.006 0 5.928 3.29 5.928 7.58v8.79h-4.9V15.7c0-1.78-.03-4.07-2.478-4.07-2.48 0-2.857 1.94-2.857 3.94v7.43h-4.907V7.5z"/></svg>
-                </a>
-                <!-- GitHub Icon -->
-                <a href="https://github.com/poushalisanyal" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.5.5.09.682-.217.682-.483 0-.237-.008-.868-.013-1.7-.278.1-.696.16-.948.16-2.05 0-3.92-1.25-4.47-3.04-.15-.42-.61-.95-.91-1.12-.27-.15-.6-.23-.04-.23.58 0 1.07.27 1.45.88.59 1.07 1.73 1.77 2.92 1.77.21 0 .42-.02.62-.05.07-.55.22-1.07.45-1.48-2.2-.25-4.51-1.1-4.51-4.9 0-1.07.38-1.95 1.02-2.65-.1-.25-.44-1.25.1-2.6 0 0 .83-.26 2.7.8.78-.22 1.6-.33 2.42-.33.82 0 1.64.11 2.42.33 1.87-1.06 2.7-0.8 2.7-0.8.54 1.35.2 2.35.1 2.6.64.7 1.02 1.58 1.02 2.65 0 3.8-2.31 4.64-4.52 4.9.27.23.52.68.52 1.37 0 .99-.009 1.78-.009 2.02 0 .26.18.58.69.48C21.135 20.17 24 16.42 24 12c0-5.523-4.477-10-10-10Z" clip-rule="evenodd" />
-                </svg>
-            </a>
+        <div class="flex justify-center space-x-6">
+            <a href="https://linkedin.com/in/poushali-sanyal-1915a2314" class="hover:text-blue-300">LinkedIn</a>
+            <a href="https://github.com/poushalisanyal" class="hover:text-blue-300">GitHub</a>
+            <a href="https://poushalisanyal.github.io/portfolio/" class="hover:text-blue-300">Portfolio</a>
         </div>
     </div>
 </section>
 
-<!-- FOOTER SECTION: -->
-<footer class="bg-black text-gray-300 py-8 px-6 md:px-12 text-center"> <!-- Footer background to pure black -->
-    <div class="container mx-auto">
-        <p class="mb-4">&copy; 2025 Poushali Sanyal. All rights reserved.</p>
-        <div class="flex justify-center space-x-6">
-            <!-- LinkedIn Icon in Footer -->
-            <a href="https://www.linkedin.com/in/poushali-sanyal-1915a2314/" target="_blank" class="text-gray-300 hover:text-blue-400 transition duration-300">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-            </a>
-            <!-- GitHub Icon in Footer -->
-            <a href="https://github.com/poushalisanyal" target="_blank" class="text-gray-300 hover:text-blue-400 transition duration-300">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.5.5.09.682-.217.682-.483 0-.237-.008-.868-.013-1.7-.278.1-.696.16-.948.16-2.05 0-3.92-1.25-4.47-3.04-.15-.42-.61-.95-.91-1.12-.27-.15-.6-.23-.04-.23.58 0 1.07.27 1.45.88.59 1.07 1.73 1.77 2.92 1.77.21 0 .42-.02.62-.05.07-.55.22-1.07.45-1.48-2.2-.25-4.51-1.1-4.51-4.9 0-1.07.38-1.95 1.02-2.65-.1-.25-.44-1.25.1-2.6 0 0 .83-.26 2.7.8.78-.22 1.6-.33 2.42-.33.82 0 1.64.11 2.42.33 1.87-1.06 2.7-0.8 2.7-0.8.54 1.35.2 2.35.1 2.6.64.7 1.02 1.58 1.02 2.65 0 3.8-2.31 4.64-4.52 4.9.27.23.52.68.52 1.37 0 .99-.009 1.78-.009 2.02 0 .26.18.58.69.48C21.135 20.17 24 16.42 24 12c0-5.523-4.477-10-10-10Z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
-    </div>
+<footer class="bg-black text-gray-400 text-center py-6">
+    © 2025 Poushali Sanyal
 </footer>
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMobileMenu = document.getElementById('close-mobile-menu');
 
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.remove('hidden');
-    });
-
-    closeMobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-    });
-    mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-    });
-</script>
-
+</body>
+</html>
