@@ -94,30 +94,44 @@
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">Personality Trait Prediction</h3>
                 <p class="text-gray-300">
-                    Built a binary classification model using SVM and MLP.
-                    Achieved 92% F1-score using K-Fold cross-validation.
-                    Deployed using FastAPI for real-time predictions.
+                    Built a binary classification system to predict personality traits using behavioral and survey-based features.
+                    Performed extensive data preprocessing including missing value handling, encoding of categorical variables, and feature scaling.
+                    Implemented and compared Support Vector Machine (SVM) and Multilayer Perceptron (MLP) classifiers using K-Fold cross-validation to ensure robust evaluation.
+                    Achieved a 92% F1-score on the best-performing model, indicating strong class balance and generalization.
+                    Deployed the trained model using FastAPI, enabling real-time personality prediction through RESTful APIs.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">Apparel Brand Image Classifier</h3>
                 <p class="text-gray-300">
-                    CNN-based image classifier using VGG16 transfer learning with fine-tuning and callbacks.
+                    Developed a deep learning image classification model to identify apparel brands from product images.
+                    Used Convolutional Neural Networks (CNNs) with VGG16 transfer learning, leveraging pretrained ImageNet weights for feature extraction.
+                    Fine-tuned the upper convolutional layers to improve domain-specific performance while reducing training time.
+                    Applied training callbacks such as EarlyStopping to prevent overfitting and improve model generalization on unseen data.
+                    Evaluated model performance using accuracy and validation metrics across multiple training epochs.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">PDF-Based Semantic Search Engine</h3>
                 <p class="text-gray-300">
-                    Built a RAG-style semantic search engine using dense embeddings and FAISS.
+                    Designed and implemented a semantic search system for querying information from PDF documents such as technical notes and research material.
+                    Performed text extraction and chunking to preserve semantic context within documents.
+                    Generated dense vector embeddings using HuggingFace sentence transformers and indexed them using FAISS for efficient similarity search.
+                    Enabled context-aware retrieval of relevant document segments based on semantic similarity rather than keyword matching.
+                    Achieved fast response times and scalable retrieval without relying on large language models.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
                 <h3 class="text-2xl font-semibold mb-2">NLP – Sentiment Analysis</h3>
                 <p class="text-gray-300">
-                    Implemented NLP pipelines using BERT, spaCy, and NLTK for sentiment analysis.
+                    Developed an NLP pipeline focused on sentiment analysis and opinion mining under faculty guidance.
+                    Implemented comprehensive text preprocessing steps including tokenization, lemmatization, stop-word removal, and normalization.
+                    Generated contextual embeddings using BERT to capture semantic meaning beyond surface-level keywords.
+                    Applied sentiment classification and aspect-based opinion extraction techniques to analyze textual data.
+                    Benchmarked transformer-based models against lexicon-based approaches such as VADER to evaluate performance trade-offs.
                 </p>
             </div>
         </div>
@@ -163,3 +177,4 @@
 
 </body>
 </html>
+
