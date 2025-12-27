@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poushali's Portfolio</title>
+    <title>Poushali Sanyal | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 
 <body class="bg-black text-white">
 
 <!-- HEADER -->
-<header class="bg-black shadow-sm py-4 px-6 md:px-12 fixed w-full z-10">
-    <nav class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-white text-2xl font-bold">Poushali Sanyal</a>
+<header class="bg-black fixed w-full z-10 shadow-sm">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="#" class="text-2xl font-bold">Poushali Sanyal</a>
         <ul class="hidden md:flex space-x-6">
             <li><a href="#home" class="hover:text-blue-400">Home</a></li>
             <li><a href="#about" class="hover:text-blue-400">About</a></li>
@@ -31,13 +29,18 @@
 </header>
 
 <!-- HOME (UNCHANGED) -->
-<section id="home" class="relative bg-gradient-to-r from-blue-600 to-black text-white h-screen flex items-center justify-center text-center">
-    <div class="p-6 max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hello, I'm Poushali Sanyal</h1>
+<section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-black text-center px-6">
+    <div class="max-w-4xl">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+            Hello, I'm Poushali Sanyal
+        </h1>
         <p class="text-xl md:text-2xl mb-8 opacity-90">
-           My learning began with numbers — structured, logical, certain. But it’s in data, with all its imperfections and hidden stories, that I found real curiosity. Over the last 2+ years, I’ve immersed myself in building machine learning and deep learning projects — not as assignments, but as explorations of how machines learn, how patterns emerge, and how real-world problems can be reframed through algorithms. From behavioral classification to image recognition, each project has shaped not just my skills but the way I think. I now seek a data science internship where I can contribute with depth, continue to question what I build, and grow in an environment that values both thinking and doing.
+            My learning began with numbers — structured, logical, certain. But it’s in data, with all its imperfections
+            and hidden stories, that I found real curiosity. Over the last 2+ years, I’ve immersed myself in building
+            machine learning and deep learning projects — not as assignments, but as explorations of how machines learn,
+            how patterns emerge, and how real-world problems can be reframed through algorithms.
         </p>
-        <a href="#portfolio" class="bg-white text-blue-600 py-3 px-8 rounded-full font-semibold hover:scale-105 transition">
+        <a href="#portfolio" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
             View My Work
         </a>
     </div>
@@ -53,12 +56,13 @@
         <div class="w-full md:w-2/3">
             <h2 class="text-4xl font-bold mb-6">About Me</h2>
             <p class="text-lg leading-relaxed mb-4">
-               I didn’t enter this field with a plan — I entered it with questions.
-
-               Studying Mathematics at Ramanujan College, DU, and now pursuing my M.Sc. in Mathematics with Computer Science from Jamia Millia Islamia, I’ve learned to respect the structure of theory — but I’ve also learned to challenge it.
+                I didn’t enter this field with a plan — I entered it with questions.
+                Studying Mathematics at Ramanujan College, DU, and now pursuing my M.Sc. in Mathematics with Computer Science
+                from Jamia Millia Islamia, I’ve learned to respect theory while challenging it through practice.
             </p>
             <p class="text-lg leading-relaxed">
-               For the past 2+ years, I’ve been building machine learning and deep learning projects — learning how real-world data behaves, how algorithms fail before they work, and how insight comes from iteration.
+                For the past 2+ years, I’ve been building machine learning and deep learning projects,
+                learning how real-world data behaves and how insight emerges through iteration.
             </p>
         </div>
     </div>
@@ -66,15 +70,14 @@
 
 <!-- SKILLS (UPDATED) -->
 <section id="skills" class="py-16 bg-black">
-    <div class="container mx-auto px-6 md:px-12">
-        <h2 class="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
-
-        <div class="max-w-4xl mx-auto space-y-5 text-gray-300 text-lg">
+    <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+        <h2 class="text-4xl font-bold text-center mb-10">Technical Skills</h2>
+        <div class="space-y-4 text-gray-300 text-lg">
             <p><strong>Programming:</strong> Python, Java, SQL, C, HTML, CSS</p>
             <p><strong>Core CS:</strong> Object-Oriented Programming, Data Structures & Algorithms</p>
-            <p><strong>Data Science:</strong> Data Cleaning, Feature Engineering, Encoding, Scaling, EDA, Visualization</p>
+            <p><strong>Data Science:</strong> Data Cleaning, Feature Engineering, Encoding, Scaling, EDA</p>
             <p><strong>Machine Learning:</strong> Regression, Classification, Cross-Validation, Hyperparameter Tuning</p>
-            <p><strong>Algorithms:</strong> Logistic Regression, Decision Trees, Random Forest, KNN, SVM, PCA, AdaBoost, XGBoost</p>
+            <p><strong>Algorithms:</strong> Logistic Regression, Decision Trees, Random Forest, KNN, SVM, PCA, XGBoost</p>
             <p><strong>Deep Learning:</strong> MLP, CNN, Transfer Learning (VGG16)</p>
             <p><strong>NLP:</strong> Text Preprocessing, Sentiment Analysis, BERT, spaCy, NLTK, VADER</p>
             <p><strong>Deployment & Tools:</strong> FastAPI, FAISS, LangChain, Pandas, NumPy, TensorFlow, Keras</p>
@@ -88,65 +91,59 @@
         <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
 
         <div class="grid md:grid-cols-2 gap-8">
-
             <div class="bg-gray-900 p-6 rounded-xl">
-                <h3 class="text-2xl font-semibold mb-3">Personality Trait Prediction</h3>
+                <h3 class="text-2xl font-semibold mb-2">Personality Trait Prediction</h3>
                 <p class="text-gray-300">
                     Built a binary classification model using SVM and MLP.
-                    Performed feature engineering and K-Fold cross-validation.
-                    Achieved a 92% F1-score and deployed the model using FastAPI.
+                    Achieved 92% F1-score using K-Fold cross-validation.
+                    Deployed using FastAPI for real-time predictions.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
-                <h3 class="text-2xl font-semibold mb-3">Apparel Brand Image Classifier</h3>
+                <h3 class="text-2xl font-semibold mb-2">Apparel Brand Image Classifier</h3>
                 <p class="text-gray-300">
-                    Developed a CNN-based image classifier using VGG16 transfer learning.
-                    Fine-tuned upper layers and applied callbacks to improve generalization.
+                    CNN-based image classifier using VGG16 transfer learning with fine-tuning and callbacks.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
-                <h3 class="text-2xl font-semibold mb-3">PDF-Based Semantic Search Engine</h3>
+                <h3 class="text-2xl font-semibold mb-2">PDF-Based Semantic Search Engine</h3>
                 <p class="text-gray-300">
-                    Built a semantic search engine using dense embeddings and FAISS
-                    to retrieve context-aware information from PDF documents.
+                    Built a RAG-style semantic search engine using dense embeddings and FAISS.
                 </p>
             </div>
 
             <div class="bg-gray-900 p-6 rounded-xl">
-                <h3 class="text-2xl font-semibold mb-3">NLP – Sentiment Analysis</h3>
+                <h3 class="text-2xl font-semibold mb-2">NLP – Sentiment Analysis</h3>
                 <p class="text-gray-300">
-                    Implemented NLP pipelines using BERT, spaCy, and NLTK
-                    for sentiment analysis and opinion mining.
+                    Implemented NLP pipelines using BERT, spaCy, and NLTK for sentiment analysis.
                 </p>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- CERTIFICATIONS (UPDATED) -->
+<!-- CERTIFICATIONS -->
 <section id="certifications" class="py-16 bg-black">
-    <div class="container mx-auto px-6 md:px-12 max-w-4xl">
-        <h2 class="text-4xl font-bold mb-8 text-center">Certifications & Achievements</h2>
-        <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
+    <div class="container mx-auto px-6 md:px-12 max-w-3xl">
+        <h2 class="text-4xl font-bold text-center mb-8">Certifications & Achievements</h2>
+        <ul class="list-disc list-inside text-gray-300 text-lg space-y-3">
             <li>IBM SkillsBuild – Data Analytics</li>
             <li>IBM SkillsBuild – Introduction to Artificial Intelligence</li>
             <li>IBM SkillsBuild – Mastering the Art of Prompting</li>
             <li>IBM SkillsBuild – Large Language Model Basics</li>
             <li>Letter of Recommendation for teaching volunteer work</li>
-            <li>Athletics medals at school and college level</li>
         </ul>
     </div>
 </section>
 
-<!-- CONTACT (UPDATED) -->
+<!-- CONTACT -->
 <section id="contact" class="py-16 bg-gradient-to-r from-blue-600 to-black">
-    <div class="container mx-auto px-6 md:px-12 text-center">
+    <div class="container mx-auto text-center px-6">
         <h2 class="text-4xl font-bold mb-6">Contact</h2>
-        <p class="text-lg mb-2">New Delhi, India</p>
-        <p class="text-lg mb-6">
+        <p class="mb-2">New Delhi, India</p>
+        <p class="mb-6">
             Email:
             <a href="mailto:sanyalpoushali19@gmail.com" class="text-blue-300 hover:underline">
                 sanyalpoushali19@gmail.com
